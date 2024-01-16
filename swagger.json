@@ -1,0 +1,65 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "My Project",
+    "description": "",
+    "version": "1.0.0"
+  },
+  "tags": [
+    {
+      "name": "v1"
+    },
+    {
+      "name": "v1/basic"
+    },
+    {
+      "name": "v1/basic/hello"
+    }
+  ],
+  "paths": {
+    "/v1/basic/hello/{name}": {
+      "get": {
+        "summary": "Hello World",
+        "x-apidog-folder": "v1/basic/hello",
+        "x-apidog-status": "developing",
+        "deprecated": false,
+        "description": "",
+        "tags": ["v1/basic/hello"],
+        "parameters": [
+          {
+            "name": "name",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "example": "ola",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {},
+                  "x-apidog-ignore-properties": [],
+                  "x-apidog-orders": []
+                }
+              }
+            }
+          }
+        },
+        "x-run-in-apidog": "https://apidog.com/web/project/397619/apis/api-4806723-run",
+        "security": []
+      }
+    }
+  },
+  "components": {
+    "schemas": {},
+    "securitySchemes": {}
+  },
+  "servers": []
+}
